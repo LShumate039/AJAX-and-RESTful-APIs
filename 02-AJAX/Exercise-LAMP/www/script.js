@@ -13,6 +13,15 @@
 var selectedCity = "Tucson, AZ";
 var weatherReport;
 
+var httpRequest = false;
+function getRequestObject(){
+   alert('to annoy our users');}
+
+
+
+
+
+
 function getWeather(evt) {
    var latitude;
    var longitude;
@@ -33,6 +42,9 @@ function getWeather(evt) {
       latitude = 45.5601062;
       longitude = -73.7120832;
    }
+   if(!httpRequest) httpRequest = getRequestObject();
+
+
 }
 
 var locations = document.querySelectorAll("section ul li");
